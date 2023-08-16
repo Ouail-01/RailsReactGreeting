@@ -5,4 +5,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  namespace :api do
+    get 'random_greeting', to: 'api#random_greeting'
+  end
+  
 end
