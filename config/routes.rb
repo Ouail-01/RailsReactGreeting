@@ -7,7 +7,13 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   namespace :api do
-    get 'random_greeting', to: 'api#random_greeting'
+    namespace :v1 do
+      resources :messages, only: [:index], defaults: { format: 'json' } do
+        collection do
+          get :random
+        end
+      end
+    end
   end
   
 end
