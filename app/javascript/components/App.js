@@ -1,13 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Greeting from './Greeting';
 
-const App = () => {
-  return (
-    <Router>
-      <Route path="/" component={Greeting} />
-    </Router>
-  );
-};
+const router = createBrowserRouter([
+  {
+    path: '/', element: <Greeting />,
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
 
 export default App;
