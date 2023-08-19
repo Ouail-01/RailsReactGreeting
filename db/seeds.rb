@@ -1,10 +1,10 @@
 # db/seeds.rb
 
-Message.create!(text: "Asalaam alaikum")
-Message.create!(text: "Hello!")
-Message.create!(text: "Hola!")
-Message.create!(text: "Bonjour")
-Message.create!(text: "Guten tag")
-Message.create!(text: "konnichiwa")
-Message.create!(text: "namaste")
-Message.create!(text: "merhaba")
+Message.create!(content: "Asalaam alaikum")
+Message.create!(content: "Hello!")
+Message.create!(content: "Hola!")
+Message.create!(content: "Bonjour")
+Message.create!(content: "Guten tag")
+Message.create!(content: "konnichiwa")
+Message.create!(content: "Namaste")
+Message.create!(content: "Merhaba")
